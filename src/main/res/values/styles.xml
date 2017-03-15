@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="common_alert_dialog_theme" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="common_alert_dialog_theme_transparent" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/common_activity_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/common_activity_slide_out_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/common_activity_slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/common_activity_slide_in_left</item>
+    </style>
+
+    <style name="CommonActivityTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+</resources>

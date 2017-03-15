@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iknow_alert_dialog_title_text"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:textColor="@android:color/black"
+    android:gravity="center_vertical|left"
+    android:textSize="15sp"
+    android:paddingLeft="12dp"
+    android:paddingRight="7dp"
+    tools:text="多选框"
+    android:ellipsize="marquee" />
